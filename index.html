@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinamik Web Ödev</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Add Component</h3>
+            </div>
+            <div class="card-body">
+              <label>Select Component</label>
+              <select class="form-control" onchange="select()" id="component">
+                <option value="button">Button</option>
+                <option value="div">Div</option>
+                <option value="link">Link</option>
+                <option value="paragraph">Paragraph</option>
+                <option value="image">Image</option>
+                <option value="input">Input</option>
+                <option value="header">Header</option>
+              </select>
+              <label>Select Component Id</label>
+              <select class="form-control" id="componentId"></select>
+            </div>
+            <div class="card-body">
+              <div id="addIdDiv">
+              <label for="addId">Id</label>
+              <input
+                type="text"
+                name=""
+                id="addId"
+                placeholder="Add Id"
+                class="form-control mb-3"
+              />
+            </div>
+
+              <div id="addClassDiv">
+                <label for="addClass">Class</label>
+              <input
+                type="text"
+                name=""
+                id="addClass"
+                placeholder="Add Class"
+                class="form-control mb-3"
+              />
+              </div>
+              
+
+              <div id="colorDiv">
+                <label for="Color">Background Color</label>
+                <select class="form-control mb-3" id="Color">
+                  <option value="danger">Danger</option>
+                  <option value="warning">Warning</option>
+                  <option value="primary">Primary</option>
+                  <option value="success">Success</option>
+                  <option value="dark">Dark</option>
+                  <option value="secondary">Secondary</option>
+                </select>
+              </div>
+
+              <div id="textColorDiv">
+                <label for="textColor">Text Color</label>
+                <select class="form-control mb-3" id="textColor">
+                  <option value="warning">Warning</option>
+                  <option value="primary">Primary</option>
+                  <option value="danger">Danger</option>
+                  <option value="success">Success</option>
+                  <option value="dark">Dark</option>
+                  <option value="secondary">Secondary</option>
+                </select>
+              </div>
+
+              <div id="btnDiv">
+                <label for="btnSize">Button Size</label>
+                <select class="form-control mb-3" id="btnSize">
+                  <option>Regular</option>
+                  <option value="btn-sm">Small</option>
+                  <option value="btn-lg">Large</option>
+                </select>
+              </div>
+
+              <div id="linkDiv">
+                <label for="link">Link</label>
+                <input type="text" class="form-control mb-3" placeholder="URL" id="addLink">
+                
+              </div>
+
+              <div id="fontSizeDiv">
+                <label for="fontSize">Font Size</label>
+                <select class="form-control mb-3" id="fontSize">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                </select>
+              </div>
+              
+              <div id="headerDiv">
+                <label for="header">Header Size</label>
+                <select class="form-control mb-3" id="header">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+              </div>
+              
+
+              <div id="inputDiv">
+                <label for="input">Input type</label>
+                <select class="form-control mb-3" id="input">
+                    <option value="text">Text</option>
+                    <option value="number">Number</option>
+                    <option value="email">Email</option>
+                    <option value="password">Password</option>
+                </select>
+              </div>
+              <div id="imageDiv">
+                <label for="image">Image Link</label>
+                <input class="form-control mb-3" id="image"></input>
+              </div>
+
+              <div id="textDiv">
+              <label for="Text">Text</label>
+              <input type="text" placeholder="Text" id="Text" class="form-control mb-3">
+            </div>
+            </div>
+            <div class="card-footer">
+              <button
+                class="btn btn-success form-control"
+                onclick="addComponent()"
+              >
+                Add Companent
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-8" id="content"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
